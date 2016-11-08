@@ -6,6 +6,8 @@ exports.up = function (knex, Promise) {
     table.string('firstName')
     table.string('lastName')
     table.string('NHI')
+    table.integer('location_id')
+    table.string('consultant_id')
   })
 }
 
