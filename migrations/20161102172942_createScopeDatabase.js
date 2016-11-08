@@ -11,5 +11,5 @@ exports.up = function (knex, Promise) {
 
 exports.down = function (knex, Promise) {
   console.log('The patients table has been dropped')
-  return knex.schema.dropTableifExists('patients')
+  return knex.schema.dropTableIfExists('patients')
 }
