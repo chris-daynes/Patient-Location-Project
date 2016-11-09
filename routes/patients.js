@@ -1,10 +1,15 @@
 var express = require('express')
 var router = express.Router()
-var pts = require('../db/patients.js')
+var getPatientList = require('../db/functions.js').getPts
+var getPatientLocation = require('../db/functions.js').getPatientLocation
 
 // gets a list of all the pts
 router.get('/', function (req, res) {
-  pts.getPts()
+  getPatientLocation(1)
+    .then(data => console.log(data))
+
+
+  getPatientList()
     .then(function (ptsFromDB) {
       res.render('patients', { patients: ptsFromDB })
     })

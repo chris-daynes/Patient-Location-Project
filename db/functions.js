@@ -13,6 +13,6 @@ function getPts () {
 
 function getPatientLocation (patientId) {
   return knex.from('patients')
-    .innerJoin('locations', 'patient.location_id', '=', 'location.id')
-    .where('patient.id', '=', patientId)
+    .innerJoin('locations', 'patients.location_id', '=', 'locations.id')
+    .where('patients.id', '=', patientId)
 }
