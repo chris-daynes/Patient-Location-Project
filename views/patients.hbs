@@ -3,9 +3,6 @@
 
 <div>
   {{#each patients}}
-        <h2>{{this.id}}</h2>
-        <h2>{{this.firstName}}</h2>
-        <h3>{{this.lastName}}</h3>
-        <p>{{this.NHI}}</p>
+    {{this.id}}{{this.firstName}} {{this.lastName}} {{this.NHI}} {{this.location_id}}
   {{/each}}
 </div>
