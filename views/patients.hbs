@@ -1,8 +1,8 @@
-<h1>All the pts</h1>
 
 
-<div>
+<div id='paperList'>
+  <h1>Patient List</h1>
   {{#each patients}}
-</p>{{NHI}} {{firstName}} {{lastName}} {{location}} {{name}}<p>
+<p id='listItem'>{{firstName}} {{lastName}} <span class='bold'>{{location}}</span>  {{NHI}} {{name}}</p>
   {{/each}}
 </div>
