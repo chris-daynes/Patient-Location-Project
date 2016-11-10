@@ -10,8 +10,8 @@ exports.seed = function (knex, Promise) {
           firstName: 'Donald',
           lastName: 'Trump',
           NHI: 'ABC1234',
-          location_id: '2',
-          consultant_id: '1'
+          location_id: 2,
+          consultant_id:
         }),
 
         knex('patients').insert({
@@ -19,8 +19,8 @@ exports.seed = function (knex, Promise) {
           firstName: 'Hillary',
           lastName: 'Clinton',
           NHI: 'DEF5678',
-          location_id: '3',
-          consultant_id: '2'
+          location_id: 3,
+          consultant_id: 3
         }),
 
         knex('patients').insert({
@@ -28,8 +28,8 @@ exports.seed = function (knex, Promise) {
           firstName: 'Bernie',
           lastName: 'Sanders',
           NHI: 'GHI9012',
-          location_id: '4',
-          consultant_id: '3'
+          location_id: 4,
+          consultant_id: 3
         })
       ])
     })
