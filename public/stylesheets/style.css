@@ -28,6 +28,7 @@ a {
   color: #00B7FF;
 }
 
-.bold {
+span.bold {
   font-weight: bold;
+  color: red;
 }
