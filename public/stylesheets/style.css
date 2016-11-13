@@ -2,3 +2,12 @@ span.bold {
   color: red;
   font-weight: bolder;
 }
+
+h1 {
+  text-align: center;
+}
+
+.justify {
+  display: flex;
+  justify-content: center;
+}
