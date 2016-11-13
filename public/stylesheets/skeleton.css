@@ -324,7 +324,7 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 400px) {
+
   th,
 td {
   padding: 12px 15px;
@@ -336,7 +336,7 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
-}
+
 
 
 
