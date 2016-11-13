@@ -12,19 +12,17 @@
           <th>clastName</th>
         </tr>
       </thead>
-    <tbody>
-      {{#each patients}}
-        <tr>
-          <td>{{firstName}}</td>
-          <td>{{lastName}}</td>
-          <td><span class='bold'>{{location}}</span> </td>
-          <td>{{NHI}}</td>
-          <td>{{clastName}}</td>
-        </tr>
-      {{/each}}
-    </tbody>
+      <tbody>
+        {{#each patients}}
+          <tr>
+            <td>{{firstName}}</td>
+            <td>{{lastName}}</td>
+            <td><span class='bold'>{{location}}</span> </td>
+            <td>{{NHI}}</td>
+            <td>{{clastName}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   </div>
 </div>
-
-
-</table>
