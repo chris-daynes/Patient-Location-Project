@@ -405,9 +405,6 @@ there.
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-  table {
-    font-size: 0.7em;
-  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
