@@ -1,48 +1,4 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image:url('../images/wood.jpg');
-  background-size: cover;
-}
-h1 {
-  text-align: center;
-  padding-top: 5%;
-}
-
-#paperList {
-  background-image: url('../images/linedpaper.png');
-  height: 600px;
-  max-width: 70%;
-  margin: auto;
-  margin-top: 5%;
-}
-
-#listItem {
-  font-family: 'Architects Daughter', cursive;
-  text-align: left;
-  margin-left: 5%;
-  font-size: 1.2em;
-}
-
-a {
-  color: #00B7FF;
-}
-
 span.bold {
-  font-weight: bold;
   color: red;
-}
-
-.indexPage {
-  text-align: center;
-}
-
-button {
-  max-width: 20%;
-  height: auto;
-  border-radius: 10px;
-  border: 2px solid black;
-  margin: 10px;
-  font 40px;
-  padding: 20px;
+  font-weight: bolder;
 }

@@ -1,8 +1,30 @@
 
-
-<div id='paperList'>
-  <h1>Patient List</h1>
-  {{#each patients}}
-<p id='listItem'>{{firstName}} {{lastName}} <span class='bold'>{{location}}</span>  {{NHI}} {{cfirstName}} {{clastName}}</p>
-  {{/each}}
+<div class='container'>
+  <div id='paperList'>
+    <h1>Patient List</h1>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Location</th>
+          <th>HNI</th>
+          <th>clastName</th>
+        </tr>
+      </thead>
+    <tbody>
+      {{#each patients}}
+        <tr>
+          <td>{{firstName}}</td>
+          <td>{{lastName}}</td>
+          <td><span class='bold'>{{location}}</span> </td>
+          <td>{{NHI}}</td>
+          <td>{{clastName}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </div>
 </div>
+
+
+</table>
