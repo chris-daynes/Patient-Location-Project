@@ -3,7 +3,16 @@
     <div class="row">
       <div class="six columns">
         <label for="Patient NHI">Enter Patient NHI</label>
-        <input type="text" name="Patient NHI" value="">
+        <input type="text" name="Patient NHI">
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+          {{#each patients}}
+            <p>
+                <a href='#'>{{NHI}} {{firstName}} {{lastName}}</a>
+            </p>
+          {{/each}}
       </div>
     </div>
   </form>
