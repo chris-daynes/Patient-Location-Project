@@ -8,7 +8,7 @@ var bodyParser = require('body-parser')
 var index = require('./routes/index')
 var users = require('./routes/users')
 var patients = require('./routes/patients')
-var moving = require('./routes/patients')
+var moving = require('./routes/moving')
 
 var app = express()
 
