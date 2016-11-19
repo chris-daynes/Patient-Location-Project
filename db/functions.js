@@ -4,11 +4,11 @@ var knex = Knex(knexConfig)
 
 module.exports = {
   getPts,
-  getPatientById
+  getPatientById,
+  getInPatients
 }
 
 function getPts () {
-  //  return knex.raw('SELECT patients.*, consultantList.*, locations.* from patients  JOIN locations ON  locations.id = patients.location_id JOIN consultantList ON patients.consultant_id = consultantList.id')
 return knex('patients')
   .join('consultantList', 'patients.consultant_id', '=', 'consultantList.id')
   .join('locations', 'patients.location_id', '=', 'locations.id')
@@ -18,4 +18,8 @@ return knex('patients')
 function getPatientById (NHI) {
   return knex('patients')
     .where('NHI', '=', NHI)
+}
+
+function getInPatients() {
+  return knex('patients').where('inpatient', 1)
 }
