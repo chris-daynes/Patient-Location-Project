@@ -1,6 +1,7 @@
 var express = require('express')
 var router = express.Router()
 var getPts = require('../db/functions').getPts
+var getPatientById = require('../db/functions').getPatientById
 
 // gets a list of all the pts
 router.get('/', function (req, res) {

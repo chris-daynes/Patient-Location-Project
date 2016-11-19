@@ -2,7 +2,9 @@ var express = require('express')
 var router = express.Router()
 
 router.get('/', function (req, res) {
-  res.render('index', {title: 'title'})
+
+  console.log('This is the moving page!');
+  res.render('moving', )
 })
 
 module.exports = router
