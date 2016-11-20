@@ -10,7 +10,8 @@
       <div class="six columns">
           {{#each patients}}
             <p>
-                <a href='#'>{{NHI}} {{firstName}} {{lastName}}</a>
+                <a href='#' onclick = move()>{{NHI}} {{firstName}} {{lastName}}</a><br/>
+
             </p>
           {{/each}}
       </div>
