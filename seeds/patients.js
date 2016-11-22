@@ -1,5 +1,7 @@
 var createPatients = require('../data/patient-objects')
 var patients = createPatients()
+
+
 console.log('This is the patients Object ', patients);
 exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries
