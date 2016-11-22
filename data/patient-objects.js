@@ -1,13 +1,12 @@
 var makeNHI = require('./nhi-generator')
-var ptObjIncomplete = require('./MOCK_DATA.json')
-
+var ptArrayIncomplete = require('./MOCK_DATA.json').patients
 
 function newObject() {
   var nhis = makeNHI(100)
   for (var i = 0; i < nhis.length; i++) {
-    ptObjIncomplete.patients[i] = nhis[i]
+    ptArrayIncomplete[i].NHI = nhis[i]
   }
-  return ptObjIncomplete
+  return ptArrayIncomplete
 }
 
 module.exports = newObject

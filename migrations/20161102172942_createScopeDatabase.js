@@ -8,7 +8,6 @@ exports.up = function (knex, Promise) {
     table.string('NHI')
     table.integer('location_id')
     table.integer('consultant_id')
-    table.boolean('inpatient')
   })
 }
 

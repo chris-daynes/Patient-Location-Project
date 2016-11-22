@@ -5,7 +5,7 @@ var getInPatients = require('../db/functions').getInPatients
 
 // get a list of all the inpatients
 router.get('/', function (req, res) {
-  getInPatients()
+  getPatients()
     .then(function (ptsFromDB) {
         console.log(ptsFromDB);
         res.render('moving', { patients: ptsFromDB })
