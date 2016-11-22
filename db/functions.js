@@ -2,10 +2,13 @@ var Knex = require('knex')
 var knexConfig = require('../knexfile')[process.env.NODE_ENV || 'development']
 var knex = Knex(knexConfig)
 
+var newPtObject = require('../data/patient-objects')
+
 module.exports = {
   getPts,
   getPatientById,
-  getInPatients
+  getInPatients,
+  insertPatients
 }
 
 function getPts () {
@@ -22,4 +25,8 @@ function getPatientById (NHI) {
 
 function getInPatients() {
   return knex('patients').where('inpatient', 1)
+}
+
+function insertPatients() {
+  return knex.insert(newPtObject).into('patients')
 }
