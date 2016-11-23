@@ -1,7 +1,21 @@
 
 <div class='container'>
-  <h1>Patient List</h1>
-  
+
+  <div class='row'>
+    <div class="six columns">
+      <h1>Patient List</h1>
+    </div>
+    <div class="six columns">
+        <select class=bossDropdown>
+          {{#each consultants}}
+            <option value='{{clastName}}'>{{clastName}}</option>
+          {{/each}}
+        </select>
+
+    </div>
+</div>
+
+
   <div class='row'>
     <div class='table'>
       <table class="u-full-width">
