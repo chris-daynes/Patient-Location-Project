@@ -4,6 +4,7 @@ var getPts = require('../db/functions').getPts
 var getPatientById = require('../db/functions').getPatientById
 var insertPatients = require('../db/functions').insertPatients
 var getConsultants = require('../db/functions').getConsultants
+var getPtsByConsultant = require('../db/functions').getConsultants
 
 
 // gets a list of all the pts
