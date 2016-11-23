@@ -9,6 +9,9 @@ router.get('/', function (req, res) {
       let singlePatient = ptsFromDB.filter((patient) => {
         return patient.NHI == req.query.NHI
       })
+      if (singlePatient.length === 0) {
+        res.render('errorPage', {message: 'Non existant NHI'})
+      }
       console.log('This is the single patient', singlePatient);
       res.render('transit', singlePatient[0])
     })
