@@ -6,7 +6,7 @@ var getPts = require('../db/functions').getPts
 router.get('/', function (req, res) {
   getPts()
     .then(function (ptsFromDB) {
-      let singlePatient = ptsFromDB.filter((patient) => {
+      var singlePatient = ptsFromDB.filter( function (patient){
         return patient.NHI == req.query.NHI
       })
       if (singlePatient.length === 0) {
