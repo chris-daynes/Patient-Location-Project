@@ -13,4 +13,6 @@ function reDirect () {
      window.location = `/patients/${e.value}`
 }
 
-addEventListener
+document.getElementById("index").addEventListener('click', function() {
+  window.location = '/patients/'
+})
