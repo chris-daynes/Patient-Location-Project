@@ -6,12 +6,11 @@
       <h1>Patient List</h1>
     </div>
     <div class="six columns">
-        <select class=bossDropdown>
+        <select id='bossDropdown'>
           {{#each consultants}}
-            <option value='{{clastName}}'>{{clastName}}</option>
+            <option  id='conDropdown' value='{{clastName}}'>{{clastName}}</option>
           {{/each}}
         </select>
-
     </div>
 </div>
 

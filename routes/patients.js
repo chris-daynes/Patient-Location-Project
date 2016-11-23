@@ -19,4 +19,15 @@ router.get('/', function (req, res) {
     })
 })
 
+router.get('/:consultant', function (req, res) {
+  Promise.all([getPts(), getConsultants()])
+    .then(function (values) {
+      var filteredPts = values[0].filter((ptData) => {
+        return ptData.clastName == req.params.consultant
+      })
+      res.render('patients', {patients: filteredPts, consultants: values[1]})
+    })
+    .catch((error) => console.log(error))
+})
+
 module.exports = router
