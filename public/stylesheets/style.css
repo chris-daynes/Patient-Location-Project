@@ -19,5 +19,11 @@ h1 {
 
 .bossDropdown {
   margin-top: 5%;
+}
 
+.pt-going-box {
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 5%;
+  border-radius: 8px;
 }

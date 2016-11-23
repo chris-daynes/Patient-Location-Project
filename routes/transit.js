@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
         return patient.NHI == req.query.NHI
       })
       if (singlePatient.length === 0) {
-        res.render('errorPage', {message: 'Non existant NHI'})
+        res.render('moving', {message: 'Non existant NHI'})
       }
       console.log('This is the single patient', singlePatient);
       res.render('transit', singlePatient[0])
