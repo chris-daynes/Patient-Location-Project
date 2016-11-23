@@ -1,19 +1,12 @@
-<div class="container">
-  <form class="" action="./patients.js" method="get">
-    <div class="row">
-      <div class="six columns">
-        <label for="Patient NHI">Enter Patient NHI</label>
-        <input type="text" name="Patient NHI">
-      </div>
-    </div>
-    <div class="row">
-      <div class="six columns">
-          {{#each patients}}
-            <p>
-                <a href='#' onclick = move()>{{NHI}} {{firstName}} {{lastName}}</a><br/>
 
-            </p>
-          {{/each}}
+
+<div class="container">
+  <form class="" action="./transit" method="get">
+    <div class="row">
+      <div class="tweleve columns">
+        <label name=NHI>Search by NHI</label>
+        <input type="text"  name="NHI">
+        <input type='submit' class=button-primary value='Submit'>
       </div>
     </div>
   </form>
