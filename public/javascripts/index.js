@@ -14,5 +14,5 @@ function reDirect () {
 }
 
 document.getElementById("index").addEventListener('click', function() {
-  window.location = '/patients/'
+  window.location = '/'
 })
