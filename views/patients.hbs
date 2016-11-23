@@ -5,12 +5,16 @@
     <div class="six columns">
       <h1>Patient List</h1>
     </div>
-    <div class="six columns">
+    <div class="three columns">
         <select id='bossDropdown'>
+          <option id='conDropdown' value='All'>All</option>
           {{#each consultants}}
             <option  id='conDropdown' value='{{clastName}}'>{{clastName}}</option>
           {{/each}}
         </select>
+    </div>
+    <div class='three columns'>
+      <button class='index class='button-primary'>Index</button>
     </div>
 </div>
 
